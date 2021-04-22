@@ -1,8 +1,10 @@
-let title = "com";
-let author = "miyushan";
-let age = 23;
+let arr = ['shakeer', 'miyushan', 'rodrigo'];
+// console.log(arr);
+// console.log(arr[1]);
+// arr[2   ] = 'perera';
 
-//let result = "I am studing " + title + ". And my name is " + author + ". My age is " + age;
-
-let result = `I am studing ${title}. And my name is ${author}. My age is ${age}.`
+let result = arr.join(' ');
 console.log(result);
+
+let index = arr.indexOf('miyushan');
+console.log(index);
