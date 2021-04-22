@@ -1,6 +1,3 @@
-let arr = ['shakeer', 'miyushan', 'rodrigo'];
+let age = null;
 
-
-let result = arr.push('aakila');
-result = arr.pop()
-console.log(arr);
+console.log(age, age+3, `the age is ${age}`);
