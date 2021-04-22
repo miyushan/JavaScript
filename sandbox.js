@@ -1,8 +1,22 @@
-//let age = 25;
-const year = 2021;
-console.log(age, year);
+//strings
+console.log.apply('Hello UOJ');
 
-age = 35;
+let food = 'rice';
+console.log(food);
 
-var num = 5;
-console.log(age, year);
+//string concatenation
+let firstName = 'Shakeer';
+let LastName = 'Miyushan';
+let fullName = firstName + ' ' + LastName;
+console.log(fullName);
+
+//getting charactors
+console.log(fullName[4]);
+
+//get length
+console.log(fullName.length);
+
+//string methods
+console.log(fullName.toUpperCase());
+let result = fullName.toLowerCase();
+console.log(result);
