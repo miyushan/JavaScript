@@ -1,9 +1,13 @@
-//console.log(true, false, 'true', 'false');
+//for loop
 
-let email = 'smiushan2015@gmail.com';
-let result = email.includes('!');
-console.log(result);
+// for (let i = 0; i < 5; i++) {
+//     console.log('loop ' , i);
+// }
 
-let age = 23;
-console.log(age == 23);
-console.log(age == 30);
+const names = ['shakeer', 'miyushan', 'rodrigo'];
+
+for (let i = 0; i < names.length; i++) {
+    //  console.log('element ', i , ' is: ', names[i]);  
+    let html = `<div>${names[i]}</div>`;
+    console.log(html);
+}
