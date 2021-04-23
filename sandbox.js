@@ -1,8 +1,11 @@
-//do-while loop
+//if statement
 
-let i = 0;
+const pw = 'passfwewegwse@';
 
-do{
-    console.log(i);
-    i++
-}while (i<5);
+if(pw.length >= 12 && pw.includes('@')){
+    console.log('Your password is strong enough');
+}else if(pw.length >= 12){
+    console.log('Your password is okay');
+}else{
+    console.log('Your password is weak');
+}
