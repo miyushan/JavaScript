@@ -1,11 +1,23 @@
-const name = 'shan';
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
-//function
-const great = () => 'hello';
+//callback functions
+people.forEach(function(){
+    console.log('something');
+});
 
-let resultOne = great();
-console.log(resultOne);
+console.log('\n');
+people.forEach(function(name){
+    console.log(name);
+});
 
-//method
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+//modify above code by removing function keyword
+console.log('\n');
+people.forEach( name => {
+    console.log(name);
+});
+
+//modify above code with including index
+console.log('\n');
+people.forEach( (name, index) => {
+    console.log(index, name);
+});
