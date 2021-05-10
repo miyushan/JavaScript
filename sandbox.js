@@ -1,32 +1,41 @@
-function greet(){
-    console.log('Hello');
-}
-greet();
-
-const speak = function(){
-    console.log('I am speaking');
-}
-speak();
-
-const speak2 = function(name){
-    console.log(`I am speaking to ${name} `);
-}
-speak2(78);
-
-const speak3 = function(age, date){
-    console.log(`My age is ${age} and born on ${date}`)
-}
-speak3(23,1998);
-
-//like a constructor
-const speak4 = function(age=18, date=2003){
-    console.log(`My age is ${age} and born on ${date}`);
-}
-speak4();
-
+//normal function
 const area = function(radius){
     let temp = Math.PI*radius*radius;
     return temp;
 }
+
+//arrow function
+const arrowFunArea = (radius) => {
+    let temp = Math.PI*radius*radius;
+    return temp;
+};
+
+//more shorter
+const shortArea = radius => Math.PI*radius**2;
+
 const globleArea = area(7);
 console.log(`Area is: ${globleArea}`);
+
+const globleArrowArea = arrowFunArea(7);
+console.log(`Area is: ${globleArrowArea}`);
+
+const globleshortArea = shortArea(7);
+console.log(`Area is: ${globleArrowArea}`);
+
+
+
+
+//examples
+const great = () => 'hello, world';
+const global = great();
+console.log(global);
+
+const bill = (products, tax) => {
+    let tot = 0;
+    for(let i = 0; i<products.length; i++){
+        tot += products[i] + products[i]*tax;
+    }
+    return tot;
+};
+const ans = bill([10,15,30],0.2);
+console.log(ans);
