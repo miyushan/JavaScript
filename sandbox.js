@@ -1,7 +1,10 @@
-let ScoreOne = 50;
-let ScoreTwo = ScoreOne;
+const user1 = {
+    name:'miyushan',
+    age:30
+}
 
-console.log(`ScoreOne: ${ScoreOne}, ScoreTwo: ${ScoreTwo}`);
+const user2 = user1;
+console.log(user1,user2);
 
-ScoreOne = 100;
-console.log(`ScoreOne: ${ScoreOne}, ScoreTwo: ${ScoreTwo}`);
+user1.age = 15;
+console.log(user1,user2);
