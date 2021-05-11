@@ -1,4 +1,9 @@
-const para = document.querySelector('p');
-console.log(para.innerText);
+const paras = document.querySelectorAll('p');
 
-para.innerText = 'I am miyushan';
+paras.forEach( (para) => {
+    console.log(para.innerText);
+    para.innerText += ' New text';
+})
+
+const htmlTag = document.querySelector('.main_headline');
+htmlTag.innerHTML = '<h1>This is the best</h1>';
