@@ -2,20 +2,22 @@ let user = {
     name: 'miyushan',
     age: 30,
     email: 'smiushan2015@gmail.com',
-    blogs: ['Nirosha','Arun','Aakila']
+    blogs: ['Nirosha','Arun','Aakila'],
+    login: function(){
+        console.log('user loged in');
+    },
+    logout: () => {
+        console.log('user loged out');
+    },
+    logBlogs (){
+         console.log('this user wrote these things');
+         this.blogs.forEach( blog =>{
+             console.log(blog);
+         })
+    }
 };
 
-console.log(user);
-console.log(user.age);
+// user.login();
+// user.logout();
 
-user.age = 35;
-console.log(user.age);
-
-console.log(user.name);
-console.log(user['name']);
-
-user['name'] = 'shakeer';
-console.log(user['name']);
-
-console.log(typeof user);
-console.log(typeof user.age);
+user.logBlogs();
