@@ -1,5 +1,7 @@
-console.log(Math);
-console.log(Math.PI);
+let ScoreOne = 50;
+let ScoreTwo = ScoreOne;
 
-const random = Math.random();
-console.log(Math.round(random * 100));
+console.log(`ScoreOne: ${ScoreOne}, ScoreTwo: ${ScoreTwo}`);
+
+ScoreOne = 100;
+console.log(`ScoreOne: ${ScoreOne}, ScoreTwo: ${ScoreTwo}`);
