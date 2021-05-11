@@ -1,9 +1,8 @@
-const paras = document.querySelectorAll('p');
+const content = document.querySelector('.main_headline'); 
 
-paras.forEach( (para) => {
-    console.log(para.innerText);
-    para.innerText += ' New text';
-})
+const people = ['shakeer', 'miyushan', 'rodrigo'];
 
-const htmlTag = document.querySelector('.main_headline');
-htmlTag.innerHTML = '<h1>This is the best</h1>';
+people.forEach(person => {
+    content.innerHTML += `<p>${person}</p>`
+});
+
