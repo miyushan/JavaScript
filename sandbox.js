@@ -1,10 +1,3 @@
-const user1 = {
-    name:'miyushan',
-    age:30
-}
+const para = document.querySelector('body > div:nth-child(2) > p.error');
 
-const user2 = user1;
-console.log(user1,user2);
-
-user1.age = 15;
-console.log(user1,user2);
+console.log(para); 
