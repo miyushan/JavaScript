@@ -1,3 +1,11 @@
+let blogs = [
+    { title: 'my name is miyushan', likes: 30},
+    { title: 'my name is shakeer', likes: 20}
+];
+
+console.log(blogs);
+
+
 let user = {
     name: 'miyushan',
     age: 30,
