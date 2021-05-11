@@ -1,23 +1,21 @@
-let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+let user = {
+    name: 'miyushan',
+    age: 30,
+    email: 'smiushan2015@gmail.com',
+    blogs: ['Nirosha','Arun','Aakila']
+};
 
-//callback functions
-people.forEach(function(){
-    console.log('something');
-});
+console.log(user);
+console.log(user.age);
 
-console.log('\n');
-people.forEach(function(name){
-    console.log(name);
-});
+user.age = 35;
+console.log(user.age);
 
-//modify above code by removing function keyword
-console.log('\n');
-people.forEach( name => {
-    console.log(name);
-});
+console.log(user.name);
+console.log(user['name']);
 
-//modify above code with including index
-console.log('\n');
-people.forEach( (name, index) => {
-    console.log(index, name);
-});
+user['name'] = 'shakeer';
+console.log(user['name']);
+
+console.log(typeof user);
+console.log(typeof user.age);
